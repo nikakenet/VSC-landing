@@ -1,0 +1,396 @@
+
+*,
+:before,
+:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Copy coupon button style [start]*/
+.RowBoxCode.code1 {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 65px;
+  line-height: 45px;
+  margin: 0 auto;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.BoxCode {
+  font-size: 30px;
+  display: block;
+  width: 50%;
+  height: 45px;
+  margin: 0 1px 0 0;
+  position: relative;
+  color: #fef100;
+  float: left;
+  border-left: 1px solid #fef100c7;
+  border-top: 1px solid #fef100c7;
+  border-bottom: 1px solid #fef100c7;
+  border-right: 1px solid #fef100c7;
+  background-color: rgba(254, 0, 253, 0.42);
+}
+
+.BtnCopy {
+  display: block;
+  width: 40%;
+  height: 45px;
+  margin: 0 0 0 1px;
+  position: relative;
+  background-color: rgba(87, 16, 39, 0.8);
+  border-right: 1px solid #fef100c7;
+  border-top: 1px solid #fef100c7;
+  border-bottom: 1px solid #fef100c7;
+  border-left: 1px solid #fef100c7;
+  color: #fb7f1f;
+  float: left;
+  cursor: pointer;
+}
+
+.BtnCopy:hover {
+  background: #FEF100;
+  color: #000000;
+}
+
+.BtnCopy:hover>.BoxCode {
+  color: #ffffff !important;
+}
+
+
+.code1.BoxCode {
+  color: #fff !important;
+}
+
+.code1.BtnCopy {
+  background: #00b7dc !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 576px) {
+  .RowBoxCode.code1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .BoxCode {
+    font-size: 24px;
+  }
+
+  .BtnCopy {
+    font-size: 14px;
+  }
+}
+/*Copy coupon button style [end]*/
+
+
+
+/*Header [start]*/
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #041d04;
+  color: #fff;
+  font-size: 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+strong,
+em {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 0 0 60px 0;
+  background: url("../img/bg.jpg") center top / cover no-repeat;
+}
+
+.section-inner {
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.top-bar {
+  background: #041d04;
+  padding: 10px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -22px 0 -22px 0;
+}
+
+.logo-container {
+  max-width: 130px;
+}
+
+.login-button,
+.register-button {
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+
+.login-button {
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.login-button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.register-button {
+  background: #fef100;
+  border: 1px solid #fef100;
+  color: #000000;
+}
+
+.register-button:hover {
+  background: #FE00FD;
+  color: #ffffff;
+  border: 1px solid #FE00FD;
+}
+
+.promo-container {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.promo-heading {
+  font-size: 30px;
+}
+
+.start {
+  max-width: 350px;
+  margin: 0 auto;
+  transition: 0.2s;
+}
+
+.start:hover {
+  filter: brightness(1.1);
+  filter: drop-shadow(5px 5px 10px #FBF36B);
+}
+
+.caption {
+  padding: 10px 0;
+}
+
+.steps-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0 12px 0;
+}
+
+.steps-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps-desc {
+  padding: 0 5px;
+}
+
+.number {
+  max-width: 50px;
+  width: 100%;
+  margin: 0 10px 0 0;
+}
+
+.steps-hl {
+  font-size:20px;
+  padding: 0 0 5px 0;
+  color: #fef100;
+}
+
+.steps-shl {
+  font-size: 16px;
+  padding: 5px 0 0 0;
+}
+/* Header [end] */
+
+
+
+/*class body-offers [start]*/
+.body-offers {
+  border-top: 1px solid #FEF100;
+  margin: 10px 0 0 0;
+}
+
+.section-games {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 30px 0 100px;
+  text-align: center;
+  max-width: 1230px;
+}
+
+.section-game {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.popular-slots {
+  margin: 0 10px 0 0;
+}
+
+#popular-slots, #table-games {
+  padding: 25px;
+}
+
+.jackpot-image {
+  position: relative;
+  width: 222px;
+  height: 150px;
+  background: url("../img/slot-frame.png") center center no-repeat / cover;
+}
+
+.counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+#today-jackpot {
+  padding: 33px 0 0 0;
+  width: 386px;
+}
+
+.today-jackpot {
+  margin: 0 0 5px 0;
+}
+
+#jackpot-spin {
+  margin: -144px;
+  padding-left: 182px;
+}
+ffff*/ 
+.table-games {
+  margin: 0 0 0 10px;
+}
+
+/*class body-offers [end]*/
+
+
+
+
+/* Media [start] */
+@media screen and (max-width: 871px) {
+  .body-offers {
+    display: flex;
+  }
+
+    .popular-slots {
+      order: 0;
+    }
+    .today-jackpot {
+      order: 2;
+    }
+    .table-games {
+      order: 1;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 870px) {
+  .steps-block {
+    max-width: 405px;
+  }
+  .steps-hl {
+    font-size: 28px;
+  }
+  .steps-shl {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .steps-block {
+    display: block;
+    margin: 20px auto;
+  }
+  .steps-item {
+    justify-content: start;
+    padding: 15px 0;
+  }
+  .section-games {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .login-button, .register-button {
+    font-size: 10px;
+    margin: 1px;
+  }
+  .logo-container {
+    max-width: 90px;
+  }
+  .start {
+    max-width: 280px;
+  }
+  .steps-block {
+    max-width: 295px;
+  }
+}
+
+
+#BarFooterTerms{color: #bfbfbf; display:block;width:100%;height:auto;min-height:4px;background:#000000;position:absolute;bottom:0px;left:0;z-index:9999999;}
+#BarFooterTerms #BoxButtonTerms{display:block;width:100%;height:30px;position:absolute;top:-35px;left:0;z-index:0;text-align:center}
+#BarFooterTerms #ButtonTerms{border-radius: 5px 5px 0 0; display:block;width:130px;height:40px;margin:0 auto;padding:13px 0;background:#000000;font-weight:500!important;text-transform:uppercase;font-size:14px;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;overflow:hidden}
+#BarFooterTerms footer{display:block;width:90%;height:auto;max-width:1200px;margin:5px auto 10px;line-height:normal;padding:20px 5px 10px;text-align:justify;font-weight:400!important;font-size:13px;position:relative;z-index:1;overflow:hidden}#BarFooterTerms footer p{display:block;width:100%;margin:20px auto;font-weight:400!important;font-size:11px;letter-spacing:0;color:#000}
+
+
+/* tracking pixel fix */
+img[src^="//my.rtmark.net/"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
