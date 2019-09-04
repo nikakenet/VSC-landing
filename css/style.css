@@ -330,11 +330,11 @@ header {
     background: url("../img/bgmobile.jpg") center top / cover no-repeat;
   }
   .login-button, .register-button {
-    font-size: 10px;
+    font-size: 9px;
     margin: 1px;
   }
   .logo-container {
-    max-width: 150px;
+    max-width: 90px;
   }
   .promo-container {
     padding: 230px 0 0 0;
