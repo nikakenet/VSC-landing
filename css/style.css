@@ -11,6 +11,7 @@
 
 /*Copy coupon button style [start]*/
 .RowBoxCode.code1 {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   width: 500px;
@@ -25,8 +26,9 @@
 .BoxCode {
   font-size: 30px;
   display: block;
-  width: 50%;
-  height: 45px;
+  width: 236px;
+  height: 60px;
+  padding: 7px;
   margin: 0 1px 0 0;
   position: relative;
   color: #fef100;
@@ -39,12 +41,14 @@
 }
 
 .BtnCopy {
+  font-size: 18px;
   display: block;
-  width: 40%;
-  height: 45px;
+  width: 190px;
+  height: 60px;
+  padding: 7px;
   margin: 0 0 0 1px;
   position: relative;
-  background-color: rgba(87, 16, 39, 0.8);
+  background-color: rgba(87, 16, 39, 0.55);
   border-right: 1px solid #fef100c7;
   border-top: 1px solid #fef100c7;
   border-bottom: 1px solid #fef100c7;
@@ -83,7 +87,6 @@
   .BoxCode {
     font-size: 24px;
   }
-
   .BtnCopy {
     font-size: 14px;
   }
@@ -102,23 +105,19 @@ body {
   color: #fff;
   font-size: 15px;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
 }
-
 ul,
 li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -130,39 +129,32 @@ em {
   padding: 0;
   margin: 0;
 }
-
 header {
-  padding: 0 0 110px 0;
-  background: url("../img/bg.jpg") center top / cover no-repeat;
+  padding: 0 0 34px 0;
+  background: url("../img/bgdesctop.jpg") center top / cover no-repeat;
 }
-
 .section-inner {
   max-width: 1080px;
   position: relative;
   margin: 0 auto;
   padding: 20px 20px;
 }
-
 .bold {
   font-weight: 700;
 }
-
 .top-bar {
   background: #041d04;
   padding: 10px 0;
 }
-
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: -22px 0 -22px 0;
 }
-
 .logo-container {
   max-width: 130px;
 }
-
 .login-button,
 .register-button {
   border-radius: 20px;
@@ -170,18 +162,15 @@ header {
   margin: 0 5px;
   transition: 0.2s;
 }
-
 .login-button {
   background: none;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
-
 .login-button:hover {
   background: #ffffff;
   color: #000000;
 }
-
 .register-button {
   background: #fef100;
   border: 1px solid #fef100;
@@ -193,59 +182,50 @@ header {
   color: #ffffff;
   border: 1px solid #FE00FD;
 }
-
 .promo-container {
   text-align: center;
-  padding: 80px 0;
+  padding: 74px 0 60px 0;
 }
-
 .promo-heading {
   font-size: 30px;
+  padding: 30px 0 30px 0;
 }
-
 .start {
-  max-width: 350px;
+  max-width: 393px;
   margin: 0 auto;
   transition: 0.2s;
+  padding: 47px 0 10px 0;
 }
-
 .start:hover {
   filter: brightness(1.1);
-  filter: drop-shadow(5px 5px 10px #FBF36B);
+  filter: drop-shadow(2px 1px 10px #FBF36B);
 }
-
 .caption {
   padding: 10px 0;
 }
-
 .steps-block {
   display: flex;
   justify-content: space-between;
   margin: 22px 0 12px 0;
 }
-
 .steps-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .steps-desc {
   padding: 0 5px;
 }
-
 .number {
   max-width: 50px;
   width: 100%;
   margin: 0 10px 0 0;
 }
-
 .steps-hl {
   font-size:20px;
   padding: 0 0 5px 0;
   color: #fef100;
 }
-
 .steps-shl {
   font-size: 16px;
   padding: 5px 0 0 0;
@@ -259,7 +239,6 @@ header {
   border-top: 1px solid #FEF100;
   margin: 10px 0 0 0;
 }
-
 .section-games {
   display: flex;
   justify-content: space-around;
@@ -268,64 +247,38 @@ header {
   text-align: center;
   max-width: 1230px;
 }
-
 .section-game {
   padding: 20px 0;
   font-size: 20px;
 }
-
-.popular-slots {
-  margin: 0 10px 0 0;
+.category-image {
+  padding: 15px 10px 0 10px;
+  transition: 0.2s;
 }
-
-#popular-slots, #table-games {
-  padding: 25px;
+.category-image:hover {
+  filter: brightness(1.1);
+  transform: scale(1.01);
 }
-
-.jackpot-image {
+.jackpot-container {
   position: relative;
-  width: 222px;
-  height: 150px;
-  background: url("../img/slot-frame.png") center center no-repeat / cover;
+  margin-top: 10px;
 }
-
-.counter {
+.jackpot {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
-
-/*
-#today-jackpot {
-  padding: 33px 0 0 0;
-  width: 386px;
-}
-
-.today-jackpot {
-  margin: 0 0 5px 0;
-}
-
-#jackpot-spin {
-  margin: -144px;
-  padding-left: 182px;
-}
-ffff*/ 
-.table-games {
-  margin: 0 0 0 10px;
-}
-
 /*class body-offers [end]*/
 
 
 
-
 /* Media [start] */
-@media screen and (max-width: 871px) {
+@media screen and (max-width: 990px) {
   .body-offers {
     display: flex;
   }
-
     .popular-slots {
       order: 0;
     }
@@ -335,11 +288,27 @@ ffff*/
     .table-games {
       order: 1;
     }
+    .steps-block {
+      display: block;
+      margin: 20px auto;
+    }
+    .steps-item {
+      justify-content: start;
+      padding: 15px 0;
+    }
+    .section-games {
+      flex-direction: column;
+      align-items: center;
+    }
 }
 
-@media screen and (min-width: 570px) and (max-width: 870px) {
+@media screen and (min-width: 580px) and (max-width: 990px) {
+  header {
+    padding: 0 0 25px 0;
+    background: url("../img/bgtablet.jpg") center top / cover no-repeat;
+  }
   .steps-block {
-    max-width: 405px;
+    max-width: 425px;
   }
   .steps-hl {
     font-size: 28px;
@@ -347,39 +316,108 @@ ffff*/
   .steps-shl {
     font-size: 20px;
   }
-}
-
-@media screen and (max-width: 870px) {
-  .steps-block {
-    display: block;
-    margin: 20px auto;
+  .section-game {
+    width: 335px;
   }
-  .steps-item {
-    justify-content: start;
-    padding: 15px 0;
-  }
-  .section-games {
-    flex-direction: column;
-    align-items: center;
+  .category-image {
+    padding: 5px 10px 0 10px;
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (min-width: 470px) and (max-width: 580px) {
+  header {
+    padding: 0 0 0 0;
+    background: url("../img/bgmobile.jpg") center top / cover no-repeat;
+  }
   .login-button, .register-button {
     font-size: 10px;
     margin: 1px;
   }
   .logo-container {
-    max-width: 90px;
+    max-width: 150px;
   }
-  .start {
-    max-width: 280px;
+  .promo-container {
+    padding: 230px 0 0 0;
+  }
+  .promo-heading{
+    font-size: 24px;
+  }
+  #BoxCode-1 {
+    width: 50%;
+    font-size: 26px;
+  }
+  #BoxCodeButton-1 {
+    width: 30%;
+    font-size: 15px;
   }
   .steps-block {
-    max-width: 295px;
+    max-width: 320px;
+    margin: -21px auto;
+  }
+  .steps-hl {
+    font-size: 20px;
+  }
+  .steps-shl {
+    font-size: 14px;
+  }
+  .section-game {
+    width: 335px;
+  }
+  .category-image {
+    padding: 5px 10px 0 10px;
   }
 }
 
+@media screen and (min-width: 315px) and (max-width: 470px) {
+  header {
+    padding: 0 0 0 0;
+    background: url("../img/bgmobile.jpg") center top / cover no-repeat;
+  }
+  .login-button, .register-button {
+    font-size: 9px;
+    margin: 1px;
+  }
+  .logo-container {
+    max-width: 90px;
+  }
+  .promo-container {
+    padding: 230px 0 0 0;
+  }
+  .promo-heading{
+    font-size: 20px;
+  }
+  #BoxCode-1 {
+    width: 50%;
+    height: 45px;
+    line-height: 32px;
+    font-size: 22px;
+  }
+  #BoxCodeButton-1 {
+    width: 40%;
+    height: 45px;
+    line-height: 32px;
+    font-size: 12px;
+  }
+  .start {
+    max-width: 420px;
+    padding: 23px 0 10px 0;
+  }
+  .steps-block {
+    max-width: 270px;
+  }
+  .steps-hl {
+    font-size: 16px;
+  }
+  .steps-shl {
+    font-size: 12px;
+  }
+  .section-game {
+    width: 240px;
+  }
+  .category-image {
+    padding: 5px 10px 0 10px;
+  }
+}
 
 #BarFooterTerms{color: #bfbfbf; display:block;width:100%;height:auto;min-height:4px;background:#000000;position:absolute;bottom:0px;left:0;z-index:9999999;}
 #BarFooterTerms #BoxButtonTerms{display:block;width:100%;height:30px;position:absolute;top:-35px;left:0;z-index:0;text-align:center}
