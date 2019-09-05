@@ -9,11 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-    <script type="text/javascript" src='js/counter.js'></script>
-    <script type="text/javascript" src='js/tweenmax.min.js'></script>
-    <script type="text/javascript" src='js/coupon.js'></script>
+
 </head>
 
 <body>
@@ -154,10 +150,17 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src='js/counter.js'></script>
+    <script type="text/javascript" src='js/tweenmax.min.js'></script>
+    <script type="text/javascript" src='js/coupon.js'></script>
     <script src="js/terms_behaviors.js" charset="utf-8"></script>
     <script src="js/index.js"></script>
     <!--END NEW TERMS AMM-->
 
+    <!-- Counter [start] -->
     <script type="text/javascript">
         $(document).ready(function () {
             if ($(".jackpot-counter").length)
@@ -182,6 +185,7 @@
                 });
         });
     </script>
+    <!-- Counter [end] -->
 
     <?php require_once($_SERVER['DOCUMENT_ROOT']."/include/js_add-aff-links.php"); ?>
 

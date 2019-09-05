@@ -435,7 +435,6 @@ header {
   clear: both;
   position: relative;
   margin-top: 20px;
-  border: 1px solid #b98519;
   border-radius: 2px;
   margin: 2px;
 }
@@ -463,7 +462,6 @@ header {
 
 .jackpot-counter .fancy-jackpot {
   width: 100%;
-  border: 2px solid #000 !important;
   font-size: 29px;
   height: 100%;
   font-weight: 700;
@@ -475,11 +473,7 @@ header {
   border-radius: 4px;
   white-space: nowrap;  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#060407+0,e8b75c+15,ffff9f+18,faf797+37,ba8727+69,f9d878+84,986d1b+95,3b2a0a+100 */
   background: #FFCF3A url(../img/counter.jpg) repeat-x;
-  box-shadow: inset 0 0 6px 2px rgba(32, 27, 24, 0.55);
-  border-bottom: 1px solid #47444a;
-  border-right: 1px solid #47444a;
-  border-left: 1px solid #262227;
-  border-top: 1px solid #262227;
+  box-shadow: inset 0 0 6px 2px rgba(253, 212, 64, 0.78);
 }
 
 @media only screen and (max-width:1090px) {
