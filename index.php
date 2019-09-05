@@ -49,11 +49,12 @@
                     </div>
                     <!-- coupon end -->
 
-                    <a href="https://www.vegasstripcasino.com/signup/?bonuscode=SLOTS777">
-                        <div class="start">
+                    <div class="start">
+                        <a href="https://www.vegasstripcasino.com/signup/?bonuscode=SLOTS777">
                             <img src="img/1-btn.png" alt="GET STARTED">
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
                     <p class="caption">*Bonus available for new players only </p>
                 </div>
             </div>
