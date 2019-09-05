@@ -263,7 +263,7 @@ header {
   position: relative;
   margin-top: 10px;
 }
-.jackpot {
+.jackpot-position {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -411,13 +411,134 @@ header {
   .steps-shl {
     font-size: 12px;
   }
-  .section-game {
-    width: 240px;
-  }
   .category-image {
     padding: 5px 10px 0 10px;
   }
 }
+
+/* NEW JACKPOT STYLES ---- START */
+.jackpot {
+  width: 260px;
+}
+
+.jackpot + a {
+  display: block;
+  margin-top: 16px;
+}
+
+.jackpot-counter {
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+  padding-top: 14.6%;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+  margin-top: 20px;
+  border: 1px solid #b98519;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+.jackpot-counter > span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.fancy-jackpot::before {
+  content: '$';
+  display: inline-block;
+  vertical-align: baseline;
+  height: 100%;
+  letter-spacing: 4px;
+  padding: 0px 5px 0px 5px;
+  position: relative;
+  bottom: -2px;
+  font-size: 30px;
+}
+
+.jackpot-counter .fancy-jackpot {
+  width: 100%;
+  border: 2px solid #000 !important;
+  font-size: 29px;
+  height: 100%;
+  font-weight: 700;
+  color: #900000;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  white-space: nowrap;  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#060407+0,e8b75c+15,ffff9f+18,faf797+37,ba8727+69,f9d878+84,986d1b+95,3b2a0a+100 */
+  background: #FFCF3A url(../img/counter.jpg) repeat-x;
+  box-shadow: inset 0 0 6px 2px rgba(32, 27, 24, 0.55);
+  border-bottom: 1px solid #47444a;
+  border-right: 1px solid #47444a;
+  border-left: 1px solid #262227;
+  border-top: 1px solid #262227;
+}
+
+@media only screen and (max-width:1090px) {
+  .jackpot {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .jackpot {
+    width: 65vw;
+  }
+  .jackpot-counter .fancy-jackpot {
+    font-size: 7vw;
+  }
+  .fancy-jackpot::before {
+    font-size: 7vw;
+  }
+}
+
+.single-char, .fancy-jackpot {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fancy-jackpot .single-char:last-child {
+  border-right: none;
+}
+
+.fancy-jackpot .single-char:first-child {
+  border-left: none;
+}
+
+.single-char.a-symbol {
+  width: 5.34%;
+}
+
+.single-char {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 9%;
+  padding-top: 0.6%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.single-char > span {
+  display: block;
+  line-height: 1.1;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* NEW JACKPOT STYLES ---- END */
 
 #BarFooterTerms{color: #bfbfbf; display:block;width:100%;height:auto;min-height:4px;background:#000000;position:absolute;bottom:0px;left:0;z-index:9999999;}
 #BarFooterTerms #BoxButtonTerms{display:block;width:100%;height:30px;position:absolute;top:-35px;left:0;z-index:0;text-align:center}
